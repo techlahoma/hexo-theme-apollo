@@ -13,21 +13,28 @@
 
 .blog-title
   float: left
-  display: inline-block
-  font-size: 120%
-  font-weight: bold
-  padding-bottom: .2em
+  clear: left
   letter-spacing: .2em
   margin: 10px 0
-  border-bottom: 5px solid color-title
+  left: .1em
+  padding: .4em 0
+  h1
+    float: left
+    clear: left
+    display: inline-block
+    font-size: 120%
+    font-weight: bold
+    padding-bottom: .2em
+  .blog-subtitle
+    float: left
+    clear: left
+    border-top: 5px solid color-title
+    color: color-title
   &:hover
-    border-color: color-link
-    a
-      color: color-link
-  a
-    position: relative
-    left: .1em
-    padding: .4em 0
+      h1
+      .blog-subtitle
+        border-color: color-link
+        color: color-link
 
 .mobile-nav-panel
   display: none

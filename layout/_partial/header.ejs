@@ -2,9 +2,12 @@
 	<i class="icon-reorder icon-large"></i>
 </div>
 <header id="header">
-	<h1 class="blog-title">
-		<a href="<%- config.root %>"><%= config.title %></a>
-	</h1>
+    <a class="blog-title" href="<%- config.root %>">
+      <h1><%= config.title %></h1>
+      <div class="blog-subtitle">
+        <%= config.subtitle %>
+      </div>
+    </a>
 	<nav class="nav">
 		<ul>
 			<% for (var i in theme.menu){ %><li><a href="<%- theme.menu[i] %>"><%= i %></a></li><% } %>
