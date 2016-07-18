@@ -10,7 +10,7 @@
     </a>
 	<nav class="nav">
 		<ul>
-			<% for (var i in theme.menu){ %><li><a href="<%- theme.menu[i] %>"><%= i %></a></li><% } %>
+            <% for (var i in theme.menu){ %><li><a href="<%- theme.menu[i] %>"><%= i %></a></li><% } %>
             <li><a href="http://www.techlahoma.org/code-of-conduct/" target="_blank">Code of Conduct</a></li>
             <% if (theme.rss && config.feed){ %><li><a href="<%- config.root + config.feed.path %>" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li><% } %>
 		</ul>
