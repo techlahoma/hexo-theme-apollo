@@ -1,8 +1,8 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
-rss: /atom.xml
+  #Blog: /blog
+  Meetup: http://www.meetup.com/OKC-FP/
+#rss: atom.xml
 
 # Content
 excerpt_link: Read More

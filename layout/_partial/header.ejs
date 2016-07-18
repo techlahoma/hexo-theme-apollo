@@ -2,17 +2,17 @@
 	<i class="icon-reorder icon-large"></i>
 </div>
 <header id="header">
-	<h1 class="blog-title">
-		<a href="<%- config.root %>"><%= config.title %></a>
-	</h1>
+    <a class="blog-title" href="<%- config.root %>">
+      <h1><%= config.title %></h1>
+      <div class="blog-subtitle">
+        <%= config.subtitle %>
+      </div>
+    </a>
 	<nav class="nav">
 		<ul>
-			<% for (var i in theme.menu){ %><li><a href="<%- theme.menu[i] %>"><%= i %></a></li><% } %>
-			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
-			<% if (theme.rss){ %><li><a href="<%- theme.rss %>" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li><% } %>
+            <% for (var i in theme.menu){ %><li><a href="<%- theme.menu[i] %>"><%= i %></a></li><% } %>
+            <li><a href="http://www.techlahoma.org/code-of-conduct/" target="_blank">Code of Conduct</a></li>
+            <% if (theme.rss && config.feed){ %><li><a href="<%- config.root + config.feed.path %>" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li><% } %>
 		</ul>
 	</nav>
-	<div id="search-form-wrap">
-		<%- search_form({button: '&#xF002;'}) %>
-	</div>
 </header>
